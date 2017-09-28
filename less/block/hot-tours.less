@@ -1,0 +1,74 @@
+.hot-tours {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	.tour {
+		position: relative;
+		background: @white;
+		margin-bottom: 20px;
+		overflow: hidden;
+		.title-tour {
+			padding-left: 20px;
+			margin-top: 15px;
+			font-size: @font-size--tour;
+			span {
+				font-size: @font-size;
+				color: @gray;
+			}
+		}
+		.stars {
+			padding-left: 20px;
+			margin-bottom: 0;
+			.fa {
+				font-size: 16px;
+				&.fa-star {
+					color: @color-warning;
+				}
+			}
+		}
+		.old-price {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			color: @gray;
+			font-size: 18px;
+			padding-right: 50px;
+			margin-bottom: 5px;
+		}
+		.info {
+			display: flex;
+			align-items: center;
+			margin: 0;
+			.local {
+				padding-left: 20px;
+				width: 50%;
+				color: @gray;
+			}
+			.price {
+				width: 50%;
+				font-size: 24px;
+				padding: 12px 0;
+				background: @btn3;
+				color: @white;
+				text-align: center;
+			}
+		}
+
+		.hidden-block {
+			position: absolute;
+			left: 0;
+			bottom: -277px;
+			width: 100%;
+			height: 277px;
+			background: #e9e9e9;
+			transition: @transition-time;
+		}
+
+		&:hover {
+			.hidden-block {
+				bottom: 0;
+			}
+		}
+
+	}
+}

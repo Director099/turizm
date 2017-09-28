@@ -1,0 +1,61 @@
+.companions {
+	padding: 0 50px;
+	.people {
+		background: @white;
+		margin: 3px;
+		box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+		padding: 20px 35px;
+		.description {
+			height: 255px;
+			margin-top: 100px;
+			margin-bottom: 20px;
+			padding-left: 10px;
+			padding-right: 10px;
+			// overflow: hidden;
+			border: 2px solid #f2f2f2;
+			.img-position {
+				margin: -90px auto 0;
+				width: 175px;
+				height: 175px;
+
+			}
+			p {
+				max-height: 110px;
+				overflow: hidden;
+				line-height: 22px;
+				color: @font-h3--color;
+			}
+		}
+	}
+
+	.owl-nav {
+		margin: 0;
+		.owl-prev,
+		.owl-next {
+			position: absolute;
+		    top: 50%;
+		    margin-top: -34px;
+		    cursor: pointer;
+		    background: initial;
+		    transition: 250ms;
+		}
+
+		.owl-prev {
+			left: 0;
+			&:hover {
+				background: transparent;
+			}
+		}
+		.owl-next {
+			right: 0;
+			&:hover {
+				background: transparent;
+			}
+		}
+		.fa {
+		    font-size: 70px;
+		    color: #fff;
+		    text-shadow: 0px 0px 1px #000;
+		}
+	}
+}

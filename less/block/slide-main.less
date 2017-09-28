@@ -1,0 +1,88 @@
+.bg-slide {
+    // background-size: cover;
+    height: 100vh;
+    .fon-color();
+    &.bg-slide-1 {
+        background: url('img/slider-1.jpg') no-repeat center;
+        background-size: cover;
+    }
+    &.bg-slide-2 {
+        background: url('img/slider-2.jpg') no-repeat center;
+        background-size: cover;
+    }
+    &.bg-slide-3 {
+        background: url('img/slider-3.jpg') no-repeat center;
+        background-size: cover;
+    }
+    &.bg-slide-4 {
+        background: url('img/slider-4.jpg') no-repeat center;
+        background-size: cover;
+    }
+}
+
+.slide-main {
+	.wrap {
+	    position: absolute;
+	    text-align: center;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    height: 100vh;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    z-index: 999;
+	}
+
+	.owl-nav {
+		margin: 0;
+		.owl-prev,
+		.owl-next {
+			position: absolute;
+		    top: 50%;
+		    margin-top: -34px;
+		    cursor: pointer;
+		    background: initial;
+		    transition: 250ms;
+		}
+
+		.owl-prev {
+			left: 75px;
+			&:hover {
+				background: transparent;
+			}
+		}
+		.owl-next {
+			right: 75px;
+			&:hover {
+				background: transparent;
+			}
+		}
+		.fa {
+		    font-size: 90px;
+		    color: #fff;
+		    text-shadow: 0px 0px 1px #000;
+		}
+	}
+}
+
+.owl-item.active .bg-slide-1,
+.owl-item.active .bg-slide-2,
+.owl-item.active .bg-slide-3,
+.owl-item.active .bg-slide-4 {
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scroll {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+         transform: scale(1);
+    }
+}
