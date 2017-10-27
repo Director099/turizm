@@ -16,7 +16,7 @@ var run = require("run-sequence"); //запуск плагинов очеред�
 var del = require("del"); //удаление ненужных файлов
 var concat = require('gulp-concat'); // Конкатинация
 var uglify = require('gulp-uglify'); // минификация js
- 
+
 gulp.task("clean", function() {
   return del("build");
 });
@@ -68,12 +68,11 @@ gulp.task('script', function() {
     'node_modules/popper.js/dist/umd/popper.min.js',
     'node_modules/bootstrap/dist/js/bootstrap.min.js',
     'js/parallax.min.js',
-    
     'node_modules/fullpage.js/vendors/jquery.easings.min.js',
     'node_modules/fullpage.js/vendors/scrolloverflow.min.js',
     'node_modules/fullpage.js/dist/jquery.fullpage.min.js',
-    'node_modules/owl.carousel/dist/owl.carousel.min.js',
-    'js/custom.js'
+    'node_modules/owl.carousel/dist/owl.carousel.min.js'
+    // 'js/custom.js'
     ])
   .pipe(concat('script.js'))
   .pipe(gulp.dest('js'))

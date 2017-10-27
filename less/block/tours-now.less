@@ -1,0 +1,81 @@
+.tours-now {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 130px;
+	.tour-sale {
+		// display: inline-block;
+		max-width: 290px;
+		width: 100%;
+		padding: 20px 35px;
+		margin: 0 10px;
+		background: #fff;
+		box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
+		transition: @transition-time;
+
+		&:hover {
+			transform: scale(1.05);
+
+			.tour-sale-text {
+				border: 2px solid #0cd2cf;
+				.img-position {
+					border: 2px solid #0cd2cf;
+
+					img {
+						transform: scale(1.05);
+					}
+				}
+
+				.tour-icon {
+					fill: #0cd2cf;
+				}
+			}
+		}
+
+		.tour-sale-text {
+			// height: 255px;
+		    margin-top: 100px;
+		    margin-bottom: 20px;
+		    padding-left: 10px;
+		    padding-right: 10px;
+		    border: 2px solid #f2f2f2;
+		    transition: @transition-time;
+
+		    .img-position {
+		    	display: block;
+		    	margin: -90px auto 0;
+			    width: 165px;
+			    height: 165px;
+			    border-radius: 50%;
+			    border: 2px solid #eeeeee;
+			    transition: @transition-time;
+			    overflow: hidden;
+
+			    img {
+			    	transition: @transition-time;
+			    	transform: scale(1);
+			    	width: 100%;
+			    }
+		    }
+
+		    .tour-icon {
+		    	display: block;
+		    	margin: 20px auto;
+		    	fill: @gray-lighter;
+        		transition: @transition-time;
+
+        		@media(max-height: 800px) {
+					margin: 10px auto;
+				}
+    	    }
+
+		    p {
+		    	text-align: center;
+		    	font-size: @font-size;
+		    }
+		}
+	}
+
+	@media(max-height: 800px) {
+		margin-bottom: 150px;
+	}
+}

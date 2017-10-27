@@ -1,0 +1,99 @@
+.pick-tur {
+	position: fixed;
+	top: 50px;
+	left: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	border: 1px solid  @btn2;
+	z-index: 99999;
+	cursor: pointer;
+	transition: @transition-time;
+	animation-name: pick-tur;
+	animation-direction: alternate;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+	animation-timing-function: steps(5, end);
+
+	// &:hover {
+	// 	transform: rotate(-10deg);
+	// }
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 134px;
+		height: 134px;
+		border-radius: 50%;
+		border: 1px solid  @btn2;
+		transition: @transition-time;
+
+		p {
+			text-align: center;
+			color: @btn2;
+			margin-top: 5px;
+			margin-bottom: 0;
+			text-transform: uppercase;
+			transition: @transition-time;
+		}
+	}
+
+	&__icon {
+		transition: @transition-time;
+		fill: @btn2;
+	}
+
+	&.disabled {
+		left: 300px;
+		-webkit-animation-play-state: paused;
+		animation-play-state: paused;
+		border: 1px solid  @white;
+
+		.pick-tur__wrapper {
+
+			border: 1px solid @white;
+
+			p {
+				color: @white;
+			}
+		}
+
+		.pick-tur__icon {
+			fill: @white;
+		}
+	}
+}
+
+@keyframes pick-tur {
+	
+	0% {
+		transform: rotate(0deg);
+	}
+
+	3% {
+		transform: rotate(-10deg);
+	}
+
+	6% {
+		transform: rotate(0deg);
+	}
+
+	9% {
+		transform: rotate(-10deg);
+	}
+	12% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+
+}

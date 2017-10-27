@@ -1,0 +1,55 @@
+.pagenext {
+	position: fixed;
+    z-index: 150;
+    bottom: 30px;
+    left: 50%;
+    width: 80px;
+    display: flex;
+    margin: 0 0 0 -40px;
+    border-top: 20px solid transparent;
+    cursor: pointer;
+    transition: bottom 1s ease-in-out;
+    animation: pagenext 2s infinite;
+    transition: bottom 1s ease-in-out;
+    opacity: 1;
+
+    span {
+		width: 50%;
+	    height: 5px;
+	    background: @btn3;
+	    display: inline-block;
+	    border-radius: 2px;
+	    transition: transform 0.3s ease-in-out,background 1s ease-in-out;
+
+	    &.pn1 {
+		    transform: rotate(30deg) translateX(0px);
+		    transform-origin: right bottom;
+	    }
+
+	    &.pn2 {
+		    transform: rotate(-30deg) translateX(-0px);
+		    transform-origin: left bottom;
+	    }
+	}
+
+	&:hover {
+		span {
+			&.pn1 {
+			    transform: rotate(45deg) translateX(0px);
+		    }
+
+		    &.pn2 {
+			    transform: rotate(-45deg) translateX(-0px);
+		    }
+		}
+	}
+}
+
+@keyframes pagenext {
+    0%,100% {
+  		transform:translate3d(0,-5px,0);
+    }
+    50% {
+  		transform:translate3d(0,5px,0);
+    }
+}

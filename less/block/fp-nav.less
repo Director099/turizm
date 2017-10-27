@@ -1,0 +1,32 @@
+#fp-nav {
+	ul li a span {
+		width: 100%;
+	    height: 100%;
+		background: transparent;
+		top: 0;
+		left: 0;
+		margin: auto;
+	}
+
+	ul li a.active span {
+		width: 100%;
+	    height: 100%;
+		background: @white;
+		padding: 1px;
+		border: 1px solid @btn3;
+	    margin: 0;
+	    transition: @transition-time;
+	}
+
+	ul li a {
+		border: 1px solid #fff;
+		border-radius: 50%;
+	}
+
+	ul li:hover a span,
+	ul li:hover a.active span {
+		width: 100%;
+	    height: 100%;
+	    margin: 0;
+	}
+}

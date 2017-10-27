@@ -1,0 +1,44 @@
+.best-tour {
+	position: relative;
+
+	.bg-sand-two {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: url("img/sand-2.jpg") no-repeat;
+		background-size: cover;
+		z-index: -1;
+	}
+
+	.bg-beach {
+		position: absolute;
+		top: 27%;
+		// bottom: 50%;
+		left: 0;
+		right: 0;
+		height: 35vh;
+	    max-height: 450px;
+		background: url("img/beach-2.jpg") no-repeat;
+		background-size: cover !important;
+		z-index: -1;
+
+		&::after {
+			content: "";
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    left: 0;
+		    bottom: 0;
+		    width: 100%;
+		    height: 100%;
+		    background: @gradient;
+		    z-index: -1;
+		}
+
+		@media(max-width: 991px) {
+			display: none;
+		}
+	}
+}

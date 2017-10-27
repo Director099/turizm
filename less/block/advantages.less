@@ -1,0 +1,133 @@
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,.5);
+    transition: @transition-time;
+
+    &__column {
+    	display: flex;
+    	flex-direction: column;
+	    flex: 0 0 16.666667%;
+	    max-width: 16.666667%;
+
+	    &:nth-child(even) {
+			flex-direction: column-reverse;
+
+			.advantages__short::after {
+				top: -20px;
+				bottom: inherit;
+				transform: rotate(180deg);
+			}
+	    }
+
+        &:hover {
+            .advantages__icon {
+                fill: @btn2;
+            }
+
+            .advantages__short p {
+                color: @btn2;
+            }
+        }
+    }
+
+    &__icon {
+        fill: @gray-lighter;
+        transition: @transition-time;
+    }
+
+    &__short {
+    	position: relative;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+    	width: 100%;
+        height: 30vh;
+    	max-height: 240px;
+    	background: @white;
+
+    	p {
+    		text-align: center;
+    		margin-bottom: 0;
+    		margin-top: 10px;
+    		padding: 0 10px;
+            transition: @transition-time;
+    	}
+
+    	&::after {
+    		content: "";
+			position: absolute;
+			right: 50px;
+			bottom: -20px;
+			border: 10px solid transparent;
+		    border-top: 10px solid @white;
+            z-index: 9;
+
+            @media(max-width: 991px) {
+                display: none;
+            }
+    	}
+    }
+
+    &__reed {
+        position: absolute;
+        bottom: 10px;
+        right: 25px;
+        color: @gray-lighten;
+    }
+
+    &__img {
+        position: relative;
+    	width: 100%;
+    	height: 30vh;
+        max-height: 240px;
+
+    	&--pic-1 {
+			background: url("img/advantages/pic-1.jpg") no-repeat;
+	    	background-size: cover;
+    	}
+
+    	&--pic-2 {
+    		background: url("img/advantages/pic-2.jpg") no-repeat;
+	    	background-size: cover;
+    	}
+
+    	&--pic-3 {
+    		background: url("img/advantages/pic-3.jpg") no-repeat;
+	    	background-size: cover;
+    	}
+
+    	&--pic-4 {
+    		background: url("img/advantages/pic-4.jpg") no-repeat;
+	    	background-size: cover;
+    	}
+
+    	&--pic-5 {
+    		background: url("img/advantages/pic-5.jpg") no-repeat;
+	    	background-size: cover;
+    	}
+
+    	&--pic-6 {
+    		background: url("img/advantages/pic-6.jpg") no-repeat;
+	    	background-size: cover;
+    	}
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            background: @gradient;
+        }
+
+        @media(max-width: 991px) {
+            display: none;
+        }
+    }
+}

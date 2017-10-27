@@ -1,30 +1,103 @@
 .companions {
 	padding: 0 50px;
+
+	.owl-item.active.center {
+		z-index: 999;
+		transform: scale(1.1);
+
+		+ .active {
+			z-index: 9;
+			// transform: scale(1.05);
+			transition: 2s;
+			+ .active {
+				z-index: 8;
+			}
+		}
+	}
+
+	.owl-item:first-child {
+		z-index: 9;
+		// transform: scale(2) !important;
+		transition: 2s;
+	}
+
+	.owl-item.cloned.active,
+	.owl-item.active {
+	    opacity: 1;
+	    transition: 1s;
+	}
+
+	.owl-item,
+	.owl-item.cloned {
+	    opacity: 0;
+	    z-index: -9;
+	}
+
 	.people {
 		background: @white;
-		margin: 3px;
+		// margin: 3px;
 		box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
 		padding: 20px 35px;
+		margin: 30px -35px;
+	    max-width: 320px;
+	    height: 55vh;
+	    max-height: 477px;
+
+
+		.img-position {
+			@prop-width: 20vh;
+
+			max-width: 175px;
+			max-height: 175px;
+			margin: 0px auto -35%;
+			width: @prop-width;
+			height: @prop-width;
+			border-radius: 50%;
+
+			@media(max-height: 730px) {
+				width: 100px;
+				height: 100px;
+				margin: 0px auto -50px;
+			}
+
+			@media(max-width: 991px) {
+				max-width: 100%;
+				max-height: 100%;
+				width: auto;
+				height: auto;
+			}
+		}
+
 		.description {
-			height: 255px;
-			margin-top: 100px;
+			height: calc(~'55vh - 208px');
+			max-height: 240px;
+			padding-top: 75px;
 			margin-bottom: 20px;
 			padding-left: 10px;
 			padding-right: 10px;
-			// overflow: hidden;
+			overflow: hidden;
 			border: 2px solid #f2f2f2;
-			.img-position {
-				margin: -90px auto 0;
-				width: 175px;
-				height: 175px;
 
-			}
 			p {
 				max-height: 110px;
 				overflow: hidden;
 				line-height: 22px;
 				color: @font-h3--color;
 			}
+
+			@media(max-height: 730px) {
+				padding-top: 45px;
+				height: calc(~'55vh - 188px');
+			}
+		}
+
+
+		@media(max-width: 1399px) and (min-width: 992px) {
+			margin: 30px -10px;
+		}
+
+		@media(max-width: 991px) {
+			margin: 30px -35px;
 		}
 	}
 
@@ -38,10 +111,15 @@
 		    cursor: pointer;
 		    background: initial;
 		    transition: 250ms;
+
+		    .arrow {
+		    	fill: @white;
+		    }
 		}
 
 		.owl-prev {
 			left: 0;
+			transform: rotate(180deg);
 			&:hover {
 				background: transparent;
 			}
@@ -51,11 +129,6 @@
 			&:hover {
 				background: transparent;
 			}
-		}
-		.fa {
-		    font-size: 70px;
-		    color: #fff;
-		    text-shadow: 0px 0px 1px #000;
 		}
 	}
 }

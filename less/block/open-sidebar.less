@@ -1,0 +1,26 @@
+.open-sidebar {
+	position: fixed;
+	top: 50%;
+    left: -84px;
+    margin-top: -14px;
+    font-size: @font-size;
+	text-align: center;
+	width: 195px;
+	background: @btn2;
+	color: @white;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	padding: 6px 0;
+	transform: rotate(-90deg);
+	z-index: 99;
+	cursor: pointer;
+	transition: @transition-time;
+
+	&:hover {
+		background: @btn2--hover;
+	}
+
+	&.disabled {
+		left: 166px;
+	}
+}

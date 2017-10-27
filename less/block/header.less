@@ -9,7 +9,14 @@
 		justify-content: space-between;
 		align-items: flex-end;
 		padding-bottom: 15px;
-		border-bottom: 1px solid #0cd2cf;
+		border-bottom: 1px solid @white;
+
+		.logo img {
+		    max-width: 40%;
+		    height: auto;
+		    min-width: 100px;
+		}
+
 		.contact {
 			display: flex;
 			align-items: center;
@@ -17,16 +24,29 @@
 				color: @white;
 				font-size: 24px;
 				padding-right: 25px;
-				border-right: 1px solid #0cd2cf;
+				border-right: 1px solid @white;
+
+				@media(max-width: 767px) {
+				    padding-right: 0;
+				    font-size: 18px;
+				    border: none;
+				    text-align: right;
+				    width: 190px;
+				}
 			}
 			.social {
 				display: flex;
 				align-items: center;
-				padding-left: 10px;
+				padding-left: 16px;
 				a {
 					font-size: 22px;
 					margin-left: 12px;
 					color: @white;
+					transition: @transition-time;
+				}
+
+				@media(max-width: 767px) {
+					display: none;
 				}
 			}
 		}
@@ -34,7 +54,44 @@
 	.navigation-menu {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items: baseline;
+		flex-wrap: wrap;
+		
+		&__toggle {
+			position: relative;
+		    width: 34px;
+		    height: 28px;
+		    border: 1px solid #fff;
+		    background: transparent;
+		    border-radius: 3px;
+		    cursor: pointer;
+		    outline: none;
+		    z-index: 9;
+
+		    &::after {
+		    	content: "";
+			    position: absolute;
+			    top: 6px;
+			    left: 5px;
+			    width: 22px;
+			    height: 2px;
+			    background: #fff;
+			    box-shadow: 0 6px 0 0 #fff, 0 12px 0 0 #fff;
+		    }
+
+		    @media(min-width: 992px) {
+			    display: none;
+		    }
+		}
+
+		.navbar-collapse {
+	    	flex-basis: auto;
+
+	    	@media(min-width: 992px) {
+	    		display: block;
+	    	}
+	    }
+
 		.list-menu {
 			display: flex;
 			justify-content: space-between;
@@ -46,7 +103,7 @@
 			margin-top: 10px;
 			.list-menu_item {
 				padding: 7px 15px;
-				border-right: 1px solid #0cd2cf;
+				border-right: 1px solid @white;
 				a {
 					text-transform: uppercase;
 					color: @white;
@@ -57,5 +114,20 @@
 				}
 			}
 		}
+
+		@media(max-width: 991px) {
+			align-items: center;
+		    margin-top: 10px;
+		}
+	}
+
+	&::after {
+	    position: absolute;
+	    top: 0;
+	    content: '';
+	    width: 100%;
+	    height: 270px;
+	    z-index: -1;
+	    background: linear-gradient(to bottom,rgba(0,0,0,.49) 0%,transparent 90%);
 	}
 }

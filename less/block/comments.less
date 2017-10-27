@@ -1,0 +1,89 @@
+.comments {
+	position: relative;
+
+	.owl-dots {
+		position: absolute;
+		top: 0px;
+		left: 0;
+		right: 0;
+
+		.owl-dot {
+			@vh: 59px;
+			width: @vh;
+			height: @vh;
+			margin: 0 5px;
+			border-radius: 50%;
+			border: 2px solid @white;
+			transition: @transition-time;
+			overflow: hidden;
+			opacity: .6;
+
+			img {
+				width: 100%;
+			}
+
+			&.active {
+				border: 2px solid @btn3;
+				border-radius: 50%;
+				box-shadow: 0 0 10px 1px rgba(0,0,0,0.6);
+				opacity: 1;
+			}
+
+			@media(max-height: 700px) {
+				@vh: 35px;
+				width: @vh;
+				height: @vh;
+			}
+		}
+	}
+
+	.owl-nav {
+		margin: 0;
+		.owl-prev,
+		.owl-next {
+			position: absolute;
+		    top: 50%;
+		    margin-top: -34px;
+		    cursor: pointer;
+		    background: initial;
+		    transition: 250ms;
+			.arrow {
+	    		fill: @gray-lighter;
+	    	}
+		}
+
+		.owl-prev {
+			left: 0px;
+			transform: rotate(180deg);
+			&:hover {
+				background: transparent;
+			}
+		}
+		.owl-next {
+			right: 0px;
+			&:hover {
+				background: transparent;
+			}
+		}
+		.fa {
+		    font-size: 90px;
+		    color: #fff;
+		    text-shadow: 0px 0px 1px #000;
+		}
+	}
+
+	@media(max-height: 700px) {
+		.travel-report {
+
+			.report-photo {
+				width: 40%;
+			 	left: -40px;
+			    bottom: -25px;
+			}
+
+			.people-comment .info-travel {
+				padding-top: 25px;
+			}
+		}
+	}
+}

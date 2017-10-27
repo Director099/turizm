@@ -1,12 +1,28 @@
 @font-face {
 	font-family: Nautilus;
-	src: url('../fonts/Nautilus.otf') format('woff2'),
-	  	 url('../fonts/Nautilus.otf') format('woff');
+	src: url('fonts/Nautilus.otf') format('woff2'),
+	  	 url('fonts/Nautilus.otf') format('woff');
 }
 
 body {
-	font: @font-size "Roboto", "Arial", sans-serif;
+	font: 300 @font-size "Roboto", "Arial", sans-serif;
+
+	@media(max-height: 800px) {
+		font: 300 14px "Roboto", "Arial", sans-serif;
+	}
+
+	@media(max-width: 992px) {
+		font: 300 14px "Roboto", "Arial", sans-serif;
+	}
 }
+
+.fp-tableCell {
+	position: relative;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;
+    margin:0;}
 
 a:hover {
 	color: #fff;
@@ -23,11 +39,18 @@ a:hover {
 	font-size: @font-size--btn;
 	text-transform: uppercase;
 	transition: @transition-time;
+	font-weight: 300;
 	&.btn-one {
 		background: @btn1;
 		border: 1px solid @white;
 		&:hover {
-			border: 1px solid @btn2--hover;
+			border: 1px solid @white;
+			background: @btn1--hover;
+		}
+
+		&.btn-one--dark {
+			border: 1px solid @gray-light;
+			color: @gray-light;
 		}
 	}
 	&.btn-two {
@@ -35,6 +58,14 @@ a:hover {
 		&:hover {
 			background: @btn2--hover;
 		}
+	}
+
+	@media(max-height: 800px) {
+		padding: 10px;
+	}
+
+	@media(max-width: 992px) {
+		font-size: 14px;
 	}
 }
 
@@ -50,47 +81,75 @@ a:hover {
 	font-size: @font-size--btn;
 	transition: @transition-time;
 	background: @btn3;
+	margin: 0 auto;
 }
 
 .title-main {
+	position: relative;
 	font: @font-h1;
 	color: @white;
     margin-bottom: 25px;
 }
 
 .title-slide {
+	position: relative;
 	font: @font-h2;
 	text-align: center;
 	color: @white;
     margin-bottom: 25px;
+    z-index: 9;
+    &.title-color {
+    	color: @font-h3--color;
+    }
+
+    @media(max-height: 800px) {
+    	margin-bottom: 15px;
+		font-size: 40px;
+    }
 }
 
 .title-city {
 	font: @font-h3;
 	text-align: center;
 	color: @font-h3--color;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .title-people {
 	font: @font-h4;
 	text-align: center;
 	color: @font-h3--color;
-    margin: 15px 0;
+    margin: 15px 0 10px;
 }
 
 .text-slide {
+	position: relative;
 	max-width: 880px;
 	text-align: center;
 	margin: 0 auto 25px;
 	color: @white;
+	&.text-color {
+    	color: @font-h3--color;
+    }
+    span {
+    	color: @btn2;
+    }
+
+    @media(max-height: 800px) {
+    	margin: 0 auto 15px;
+    }
 }
 
 .btn-block {
+	position: relative;
 	margin-top: 50px;
 	text-align: center;
 	.btn {
 		margin: 0 20px;
+	}
+
+	@media(max-height: 800px) {
+		margin-top: 20px;
 	}
 }
 

@@ -1,0 +1,21 @@
+.full-page {
+	transform: translateX(0px);
+	transition: @transition-time;
+
+	&.disabled {
+		// position: fixed !important;
+		transition: @transition-time;
+		// transform: translateX(250px);
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0,0,0,0.7);
+			z-index: 999;
+		}
+	}
+}
