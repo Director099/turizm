@@ -1,15 +1,27 @@
 'use strict';
 
 $(document).ready(function() {
-	$('#page').fullpage({
-		navigation: true,
-		navigationPosition: 'right',
-		scrollBar: true,
-		animateAnchor: true,
-		parallax: true,
-		sectionSelector: '.section',
-		slideSelector: '.slide'
-	});
+
+    if ($(window).width() >= 992) {
+            $('#page').fullpage({
+            navigation: true,
+            navigationPosition: 'right',
+            scrollBar: true,
+            animateAnchor: true,
+            parallax: true,
+            sectionSelector: '.section',
+            slideSelector: '.slide'
+        });
+    }
+	// $('#page').fullpage({
+	// 	navigation: true,
+	// 	navigationPosition: 'right',
+	// 	scrollBar: true,
+	// 	animateAnchor: true,
+	// 	parallax: true,
+	// 	sectionSelector: '.section',
+	// 	slideSelector: '.slide'
+	// });
 
 
     $('.section.bg-3').parallax({imageSrc: '/img/beach.jpg'});
@@ -17,10 +29,6 @@ $(document).ready(function() {
     $('.section.bg-5').parallax({imageSrc: '/img/palma.jpg'});
     $('.section.bg-7').parallax({imageSrc: '/img/slider-4.jpg'});
     $('.section.s').parallax({imageSrc: '/img/slider-2.jpg'});
-    // $('.slide-1').parallax({imageSrc: '/img/slider-1.jpg'});
-    // $('.slide-2 .fp-bg').parallax({imageSrc: '/img/slider-2.jpg'});
-    // $('.slide-3 .fp-bg').parallax({imageSrc: '/img/slider-3.jpg'});
-    // $('.slide-4 .fp-bg').parallax({imageSrc: '/img/slider-4.jpg'});
 
     $('.slide-main').owlCarousel({
     	loop:true,
@@ -50,20 +58,16 @@ $(document).ready(function() {
         nav: true,
         navText: ['<svg class="arrow" width="50" height="50"><use xlink:href="#right-arrow"/></svg>', '<svg class="arrow" width="50" height="50"><use xlink:href="#right-arrow"/></svg>'],
         responsiveClass: true,
-        // onInitialized: function() {
-        //     var owlItem = document.querySelector('.owl-item.active.center');
-        //     owlItem.previousSibling.style.transform = 'scale(1.05)';
-        // },
         responsive: {
             0: {
                 items: 1,
                 nav: true
             },
-            450: {
+            767: {
                 items: 3,
                 nav: true
             },
-            992: {
+            1399: {
                 items: 5,
                 nav: true,
             }
@@ -78,7 +82,7 @@ $(document).ready(function() {
         items: 1,
         onInitialized: function() {
             var dot = document.querySelectorAll('.owl-dot');
-            dot[0].innerHTML = '<img src="img/comment/comment-1.jpg" alt="Иконки">';
+            dot[0].innerHTML = '<img src="img/comment/dot-2.jpg" alt="Иконки">';
             dot[1].innerHTML = '<img src="img/comment/dot-3.jpg" alt="Иконки">';
             dot[2].innerHTML = '<img src="img/comment/dot-4.jpg" alt="Иконки">';
             dot[3].innerHTML = '<img src="img/comment/dot-5.jpg" alt="Иконки">';
@@ -92,7 +96,28 @@ $(document).ready(function() {
         dots:false,
         stagePadding: 55,
         margin: 120,
-        items: 4
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            450: {
+                items: 2,
+                nav: true
+            },
+            767: {
+                items: 3,
+                nav: true
+            },
+            1200: {
+                items: 4,
+                nav: true,
+            },
+            1399: {
+                items: 5,
+                nav: true,
+            }
+        }
     });
 
 });

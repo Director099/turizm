@@ -93,12 +93,12 @@
 		</div>
 	</aside>
 	<div class="full-page" id="page">
-		<section class="section">
+		<section class="section main-section">
 			<header class="header-fix">
 				<div class="container container-lg">
 					<div class="navigation-callback">
 						<a class="logo" href="#">
-							<img src="img/logo.png" alt="Логотип">
+							<img class="img-fluid" src="img/logo.png" alt="Логотип">
 						</a>
 						<div class="contact">
 							<a class="phone" href="#"><i class="fa fa-phone" aria-hidden="true"></i> +7-917-438-88-93</a>
@@ -113,15 +113,18 @@
 					</div>
 					<nav class="navigation-menu">
 						<a class="hashtag" href="#">#<span>Туризм</span>Уфа</a>
-						<ul class="list-menu">
-							<li class="list-menu_item"><a href="#">Туры</a></li>
-							<li class="list-menu_item"><a href="#">Советы</a></li>
-							<li class="list-menu_item"><a href="#">Туристам</a></li>
-							<li class="list-menu_item"><a href="#">Способы оплаты</a></li>
-							<li class="list-menu_item"><a href="#">Акции</a></li>
-							<li class="list-menu_item"><a href="#">Контакты</a></li>
-							<li class="list-menu_item"><a href="#">Блог</a></li>
-						</ul>
+						<button class="navigation-menu__toggle navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="list-menu">
+								<li class="list-menu_item"><a href="#">Туры</a></li>
+								<li class="list-menu_item"><a href="#">Советы</a></li>
+								<li class="list-menu_item"><a href="#">Туристам</a></li>
+								<li class="list-menu_item"><a href="#">Способы оплаты</a></li>
+								<li class="list-menu_item"><a href="#">Акции</a></li>
+								<li class="list-menu_item"><a href="#">Контакты</a></li>
+								<li class="list-menu_item"><a href="#">Блог</a></li>
+							</ul>
+						</div>
 					</nav>
 				</div>
 			</header>
@@ -145,8 +148,8 @@
 				</div>
 			</div>
 			<div class="owl-carousel owl-theme slide-main">
-			    <div class="item">
-			    	<div class="bg-slide bg-slide-1"></div>
+			    <div class="item bg-slide bg-slide-1">
+			    	<!-- <div class="bg-slide bg-slide-1"></div> -->
 			    	<section class="container container-lg wrap">
 						<section class="shadow">
 							<h1 class="title-main">Тур в Тайланд</h1>
@@ -158,8 +161,8 @@
 						</section>
 					</section>
 			    </div>
-			    <div class="item">
-			    	<div class="bg-slide bg-slide-2"></div>
+			    <div class="item bg-slide bg-slide-2">
+			    	<!-- <div class="bg-slide bg-slide-2"></div> -->
 			    	<section class="container container-lg wrap">
 						<section class="shadow">
 							<h2 class="title-main">Тур в Египет</h2>
@@ -171,11 +174,11 @@
 						</section>
 					</section>
 			    </div>
-			    <div class="item">
-			    	<div class="bg-slide bg-slide-3"></div>
+			    <div class="item bg-slide bg-slide-3">
+			    	<!-- <div class="bg-slide bg-slide-3"></div> -->
 			    	<section class="container container-lg wrap">
 						<section class="shadow">
-							<h2 class="title-main">Тур в Адыгею</h2>
+							<h2 class="title-main">Тур в ОАЭ</h2>
 							<p class="text-slide">Сопровождающий текст, раскрывающий акцию. Сопровождающий текст, раскрывающий акцию. Сопровождающий текст, раскрывающий акцию. Сопровождающий текст, раскрывающий акцию. Сопровождающий текст, раскрывающий акцию. Сопровождающий текст, раскрывающий акцию. Сопровождающий текст, раскрывающий акцию. </p>
 							<div class="btn-block">
 								<a class="btn btn-one" href="#">Видео</a>
@@ -184,11 +187,11 @@
 						</section>
 					</section>
 			    </div>
-			    <div class="item">
-			    	<div class="bg-slide bg-slide-4"></div>
+			    <div class="item bg-slide bg-slide-4">
+			    	<!-- <div class="bg-slide bg-slide-4"></div> -->
 			    	<section class="container container-lg wrap">
 						<section class="shadow">
-							<h2 class="title-main">Тур в Армению</h2>
+							<h2 class="title-main">Тур в Испанию</h2>
 							<p class="text-slide">Сопровождающий текст, раскрывающий акцию. Сопровождающий текст, раскрывающий акцию. Сопровождающий текст, раскрывающий акцию. Сопровождающий текст, раскрывающий акцию. Сопровождающий текст, раскрывающий акцию. Сопровождающий текст, раскрывающий акцию. Сопровождающий текст, раскрывающий акцию. </p>
 							<div class="btn-block">
 								<a class="btn btn-one" href="#">Видео</a>
@@ -571,9 +574,9 @@
 							<img class="report-photo" src="img/commit.jpg" alt="Фотография">
 							<div class="people-comment">
 								<div class="info-travel">
-									<img class="img-people" src="img/comment/comment-1.jpg" alt="Путешественник" width="78" height="78">
+									<img class="img-people" src="img/comment/dot-2.jpg" alt="Путешественник" width="78" height="78">
 									<section class="info-people">
-										<h3 class="name">Аврора Феодора</h3>
+										<h3 class="name">Регина</h3>
 										<p class="tour-city">Тур во Вьетнам</p>
 										<p class="stars">
 											<i class="fa fa-star" aria-hidden="true"></i>
@@ -585,7 +588,7 @@
 									</section>
 								</div>
 								<blockquote class="comment">
-									Доброе) хочу оставить отзыв о замечательной компании Sunshine travel . Два раза ездили отдыхать от них. И оба раза все прошло замечательно. Нам помогли подобрать тур, давала ценные советы, рекомендации, всегда вовремя отвечала, даже на самые наверно глупые вопросы, очень ответственный и грамотный подход к работе и клиентам. P.S.: прикладываю фоточки и видео с поездки во Вьетнам))) а Вам желаю, как можно больше хороших туристов и успехов в работе!
+									Здравствуйте. Хочется поблагодарить турагента Илону. Большое спасибо за то, что помогла выбрать прекрасный отель. Всё понятно объясняла, отвечала на все вопросы. Отдыхали с мужем в Турции с 7.05 по 17.05 в отеле Q PREMIUM RESORT 5*, это был просто рай. Будем летать теперь только с вами!
 								</blockquote>
 							</div>
 						</div>
@@ -595,9 +598,9 @@
 							<img class="report-photo" src="img/commit.jpg" alt="Фотография">
 							<div class="people-comment">
 								<div class="info-travel">
-									<img class="img-people" src="img/comment/comment-1.jpg" alt="Путешественник" width="78" height="78">
+									<img class="img-people" src="img/comment/dot-3.jpg" alt="Путешественник" width="78" height="78">
 									<section class="info-people">
-										<h3 class="name">Аврора Феодора</h3>
+										<h3 class="name">Лиля</h3>
 										<p class="tour-city">Тур во Вьетнам</p>
 										<p class="stars">
 											<i class="fa fa-star" aria-hidden="true"></i>
@@ -609,7 +612,7 @@
 									</section>
 								</div>
 								<blockquote class="comment">
-									Доброе) хочу оставить отзыв о замечательной компании Sunshine travel . Два раза ездили отдыхать от них. И оба раза все прошло замечательно. Нам помогли подобрать тур, давала ценные советы, рекомендации, всегда вовремя отвечала, даже на самые наверно глупые вопросы, очень ответственный и грамотный подход к работе и клиентам. P.S.: прикладываю фоточки и видео с поездки во Вьетнам))) а Вам желаю, как можно больше хороших туристов и успехов в работе!
+									Спасибо за наш отдых! Нам все очень понравилось) Отель классный, персонал дружелюбный, питание замечательное) Брали машину в аренду на 3 дня, объездили весь остров, побывали на всех пляжах. В общем, мы в восторге! Спасибо большое!
 								</blockquote>
 							</div>
 						</div>
@@ -619,9 +622,9 @@
 							<img class="report-photo" src="img/commit.jpg" alt="Фотография">
 							<div class="people-comment">
 								<div class="info-travel">
-									<img class="img-people" src="img/comment/comment-1.jpg" alt="Путешественник" width="78" height="78">
+									<img class="img-people" src="img/comment/dot-4.jpg" alt="Путешественник" width="78" height="78">
 									<section class="info-people">
-										<h3 class="name">Аврора Феодора</h3>
+										<h3 class="name">Регина</h3>
 										<p class="tour-city">Тур во Вьетнам</p>
 										<p class="stars">
 											<i class="fa fa-star" aria-hidden="true"></i>
@@ -633,7 +636,7 @@
 									</section>
 								</div>
 								<blockquote class="comment">
-									Доброе) хочу оставить отзыв о замечательной компании Sunshine travel . Два раза ездили отдыхать от них. И оба раза все прошло замечательно. Нам помогли подобрать тур, давала ценные советы, рекомендации, всегда вовремя отвечала, даже на самые наверно глупые вопросы, очень ответственный и грамотный подход к работе и клиентам. P.S.: прикладываю фоточки и видео с поездки во Вьетнам))) а Вам желаю, как можно больше хороших туристов и успехов в работе!
+									Хочется поблагодарить турагента Илону. Большое спасибо за то, что помогла выбрать прекрасный отель. Всё понятно обьясняла, отвечала на все вопросы. Отдыхали с мужем в Турции с 7.05 по 17.05 в отеле Q PREMIUM RESORT 5*, это был просто рай, будем летать теперь только с вами!
 								</blockquote>
 							</div>
 						</div>
@@ -643,9 +646,9 @@
 							<img class="report-photo" src="img/commit.jpg" alt="Фотография">
 							<div class="people-comment">
 								<div class="info-travel">
-									<img class="img-people" src="img/comment/comment-1.jpg" alt="Путешественник" width="78" height="78">
+									<img class="img-people" src="img/comment/dot-5.jpg" alt="Путешественник" width="78" height="78">
 									<section class="info-people">
-										<h3 class="name">Аврора Феодора</h3>
+										<h3 class="name">Юля</h3>
 										<p class="tour-city">Тур во Вьетнам</p>
 										<p class="stars">
 											<i class="fa fa-star" aria-hidden="true"></i>
@@ -657,7 +660,7 @@
 									</section>
 								</div>
 								<blockquote class="comment">
-									Доброе) хочу оставить отзыв о замечательной компании Sunshine travel . Два раза ездили отдыхать от них. И оба раза все прошло замечательно. Нам помогли подобрать тур, давала ценные советы, рекомендации, всегда вовремя отвечала, даже на самые наверно глупые вопросы, очень ответственный и грамотный подход к работе и клиентам. P.S.: прикладываю фоточки и видео с поездки во Вьетнам))) а Вам желаю, как можно больше хороших туристов и успехов в работе!
+									Добрый день! Хочется выразить благодарность Юле, которая подобрала нам путевки в Турцию и посоветовала выбрать Мармарис) все было ооочень круто!) нисколечко не пожалели !) теперь будем летать только через ваше агенство)
 								</blockquote>
 							</div>
 						</div>
@@ -712,7 +715,7 @@
 					</div>
 				</div>
 			</section>
-			<div class="application application--position">
+			<!-- <div class="application application--position">
 				<div class="container container-lg">
 					<form class="application__form" action="#" method="post">
 						<p class="application__text">Оставляйте заявку <span>сейчас</span> и получите предварительное одобрение по смс</p>
@@ -723,7 +726,7 @@
 						</div>
 					</form>
 				</div>
-			</div>
+			</div> -->
 		</section>
 		<section class="section bg-4">
 			<div class="container container-lg">
@@ -736,7 +739,7 @@
 					            <use xlink:href="#24-hours"/>
 					        </svg>
 							<p>Поддержка клиентов  24\7</p>
-							<span class="advantages__reed">Подробнее</span>
+							<!-- <span class="advantages__reed">Подробнее</span> -->
 						</div>
 						<div class="advantages__img advantages__img--pic-1"></div>
 					</div>
@@ -746,7 +749,7 @@
 					            <use xlink:href="#sunbed"/>
 					        </svg>
 							<p>Покупка тура в рассрочку  или кредит</p>
-							<span class="advantages__reed">Подробнее</span>
+							<!-- <span class="advantages__reed">Подробнее</span> -->
 						</div>
 						<div class="advantages__img advantages__img--pic-2"></div>
 					</div>
@@ -756,7 +759,7 @@
 					            <use xlink:href="#suitcase"/>
 					        </svg>
 							<p>Аренда чемодана  для отдыха</p>
-							<span class="advantages__reed">Подробнее</span>
+							<!-- <span class="advantages__reed">Подробнее</span> -->
 						</div>
 						<div class="advantages__img advantages__img--pic-3"></div>
 					</div>
@@ -766,7 +769,7 @@
 					            <use xlink:href="#globe"/>
 					        </svg>
 							<p>Оформить тур  дистанционно</p>
-							<span class="advantages__reed">Подробнее</span>
+							<!-- <span class="advantages__reed">Подробнее</span> -->
 						</div>
 						<div class="advantages__img advantages__img--pic-4"></div>
 					</div>
@@ -776,7 +779,7 @@
 					            <use xlink:href="#team"/>
 					        </svg>
 							<p>Корпоративные туры </p>
-							<span class="advantages__reed">Подробнее</span>
+							<!-- <span class="advantages__reed">Подробнее</span> -->
 						</div>
 						<div class="advantages__img advantages__img--pic-5"></div>
 					</div>
@@ -786,7 +789,7 @@
 					            <use xlink:href="#wallet"/>
 					        </svg>
 							<p>Бонусы за рекомендацию  нашей компании</p>
-							<span class="advantages__reed">Подробнее</span>
+							<!-- <span class="advantages__reed">Подробнее</span> -->
 						</div>
 						<div class="advantages__img advantages__img--pic-6"></div>
 					</div>
@@ -811,56 +814,56 @@
 				<p class="text-slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur tempore explicabo, possimus fugiat veritatis consequatur quo magnam iure consectetur eius aspernatur enim similique sint perspiciatis in. Reiciendis, tenetur cumque perspiciatis!</p>
 				<div class="owl-carousel owl-theme companions">
 				    <div class="item people">
-						<h3 class="title-city">Ханой</h3>
+						<h3 class="title-city">Айа Напа</h3>
+						<img class="img-position" src="img/people/iNNA.jpg" alt="Попутчики">
 						<section class="description">
-							<img class="img-position" src="img/people/pic-1.jpg" alt="Попутчики">
-							<h4 class="title-people">Аврора Феодора</h4>
-							<p>Хочу поехать в Ханой, август- сентябрь. В планах пляжный отдых и несколько экскурсий по близлежайшим городам.</p>
+							<h4 class="title-people">Инна</h4>
+							<p>Мне нужен попутчик! <br>Начать отдых планирую: с 1 по 20 августа</p>
 						</section>
 						<a class="btn-futher" href="#">Посмотреть</a>
 				    </div>
 				    <div class="item people">
-						<h3 class="title-city">Барселона</h3>
+						<h3 class="title-city">Кипр</h3>
+						<img class="img-position" src="img/people/kira.jpg" alt="Попутчики">
 						<section class="description">
-							<img class="img-position" src="img/people/pic-2.jpg" alt="Попутчики">
-							<h4 class="title-people">Лиза Капустина</h4>
-							<p>Хочу поехать в Ханой, август- сентябрь. В планах пляжный отдых и несколько экскурсий по близлежайшим городам.</p>
+							<h4 class="title-people">Кира</h4>
+							<p>Присоединишься?<br>Начать отдых планирую: в августе</p>
 						</section>
 						<a class="btn-futher" href="#">Посмотреть</a>
 				    </div>
 				    <div class="item people">
-						<h3 class="title-city">Рим</h3>
+						<h3 class="title-city">Кипр</h3>
+						<img class="img-position" src="img/people/julia.jpg" alt="Попутчики">
 						<section class="description">
-							<img class="img-position" src="img/people/pic-3.jpg" alt="Попутчики">
-							<h4 class="title-people">Катя</h4>
-							<p>Хочу поехать в Ханой, август- сентябрь. В планах пляжный отдых и несколько экскурсий по близлежайшим городам.</p>
+							<h4 class="title-people">Юлия</h4>
+							<p>Мне нужен попутчик<br>Начать отдых планирую: в июле 2017</p>
 						</section>
 						<a class="btn-futher" href="#">Посмотреть</a>
 				    </div>
 				    <div class="item people">
-						<h3 class="title-city">Европа</h3>
+						<h3 class="title-city">Турция</h3>
+						<img class="img-position" src="img/people/guz.jpg" alt="Попутчики">
 						<section class="description">
-							<img class="img-position" src="img/people/pic-4.jpg" alt="Попутчики">
-							<h4 class="title-people">Вадим</h4>
-							<p>Хочу поехать в Ханой, август- сентябрь. В планах пляжный отдых и несколько экскурсий по близлежайшим городам.</p>
+							<h4 class="title-people">Гузель</h4>
+							<p>Я ищу попутчика<br>Начать отдых планирую: в июле 2017</p>
 						</section>
 						<a class="btn-futher" href="#">Посмотреть</a>
 				    </div>
 				    <div class="item people">
-						<h3 class="title-city">Рим</h3>
+						<h3 class="title-city">Турция</h3>
+						<img class="img-position" src="img/people/ZIL.jpg" alt="Попутчики">
 						<section class="description">
-							<img class="img-position" src="img/people/pic-3.jpg" alt="Попутчики">
-							<h4 class="title-people">Катя</h4>
-							<p>Хочу поехать в Ханой, август- сентябрь. В планах пляжный отдых и несколько экскурсий по близлежайшим городам.</p>
+							<h4 class="title-people">Зиляра</h4>
+							<p>Поехали вместе?<br> Начать отдых планирую: в начале июля</p>
 						</section>
 						<a class="btn-futher" href="#">Посмотреть</a>
 				    </div>
 				    <div class="item people">
-						<h3 class="title-city">Рим</h3>
+						<h3 class="title-city">Греция</h3>
+						<img class="img-position" src="img/people/KET.jpg" alt="Попутчики">
 						<section class="description">
-							<img class="img-position" src="img/people/pic-3.jpg" alt="Попутчики">
-							<h4 class="title-people">Катя</h4>
-							<p>Хочу поехать в Ханой, август- сентябрь. В планах пляжный отдых и несколько экскурсий по близлежайшим городам.</p>
+							<h4 class="title-people">Екатерина</h4>
+							<p>Давай поедим вместе?!<br>Начать отдых планирую: после 5 июля</p>
 						</section>
 						<a class="btn-futher" href="#">Посмотреть</a>
 				    </div>
@@ -877,7 +880,7 @@
 				<h2 class="title-slide">Новости</h2>
 				<p class="text-slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quidem repellendus repellat saepe est, similique unde, culpa ipsum harum minima in ratione doloremque veritatis, provident quis labore adipisci recusandae doloribus.</p>
 				<div class="row">
-					<div class="col">
+					<div class="col-md-4">
 						<article class="news-brief">
 							<div class="news-brief__overflow-img">
 								<img src="img/news/359.jpg" alt="Новости">
@@ -885,14 +888,14 @@
 							<section class="news-brief__description">
 								<h3 class="news-brief__title">Не пугайтесь,что страницы наши заблокированы.</h3>
 								<span class="news-brief__data">8 августа 2016</span>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque autem praesentium dolorum veniam! Laboriosam voluptas libero tempore, hic, blanditiis cum mollitia, laborum tempora quia excepturi illum officiis reprehenderit, eaque voluptatum.</p>
-								<div class="news-brief__shadow">
-									<a class="btn btn-futher" href="#">Читать далее</a>
-								</div>
+								<p>‼ВАЖНАЯ ИНФОРМАЦИЯ‼ Друзья, почти наступило жаркое лето и у нас как обычно «жара в офисе». Всем отвечать оперативно не получается в интернете, потому что люди приходят в офис и побор тура занимает продолжительное время. Все предложения опубликовать сюда также нет физической возможно Если вы хотите словить горящий тур и получить качественный отдых просим по возможности сразу приходить к нам в офис г.Уфа,Проспект Октября 56\2</p>
 							</section>
+							<div class="news-brief__shadow">
+								<a class="btn btn-futher" href="#">Читать далее</a>
+							</div>
 						</article>
 					</div>
-					<div class="col">
+					<div class="col-md-4">
 						<article class="news-brief">
 							<div class="news-brief__overflow-img">
 								<img src="img/news/turk.jpg" alt="Новости">
@@ -900,14 +903,14 @@
 							<section class="news-brief__description">
 								<h3 class="news-brief__title">Не пугайтесь,что страницы наши заблокированы.</h3>
 								<span class="news-brief__data">8 августа 2016</span>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus reiciendis, nesciunt dignissimos excepturi, suscipit nihil nisi atque eum officia impedit quo consequatur, tempora id ratione maiores culpa incidunt molestias aut.</p>
-								<div class="news-brief__shadow">
-									<a class="btn btn-futher" href="#">Читать далее</a>
-								</div>
+								<p>Друзья, у нас случилась чрезвычайная ситуация: все наши сотрудники были заблокированы администрацией вк навсегда по неясным причинам. Контакты в кол-ве 50 тыс чел были утеряны. Восстановить доступ нам не удается. Очень просим вашей помощи и добавиться к нам самостоятельно.</p>
 							</section>
+							<div class="news-brief__shadow">
+								<a class="btn btn-futher" href="#">Читать далее</a>
+							</div>
 						</article>
 					</div>
-					<div class="col">
+					<div class="col-md-4">
 						<article class="news-brief">
 							<div class="news-brief__overflow-img">
 								<img src="img/news/Крым 4(1).jpg" alt="Новости">
@@ -915,11 +918,11 @@
 							<section class="news-brief__description">
 								<h3 class="news-brief__title">Не пугайтесь,что страницы наши заблокированы.</h3>
 								<span class="news-brief__data">8 августа 2016</span>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum in atque pariatur totam. Atque voluptas itaque neque maxime eum. Eaque nisi ea voluptas nulla sit voluptatem repellendus, doloremque possimus accusamus!</p>
-								<div class="news-brief__shadow">
-									<a class="btn btn-futher" href="#">Читать далее</a>
-								</div>
+								<p>А у нас новая статья о том «Кому доверить свой отдых или Как правильно выбрать туристическое агентство» <a href="http://www.turizmufa.ru/category/blog/">Читайте тут:</a></p>
 							</section>
+							<div class="news-brief__shadow">
+								<a class="btn btn-futher" href="#">Читать далее</a>
+							</div>
 						</article>
 					</div>
 				</div>
@@ -933,11 +936,15 @@
 			<section class="container container-lg">
 				<h2 class="title-slide title-color">Мы в соцсетях</h2>
 				<div class="row">
-					<div class="col-8">
-						<iframe width="100%" height="470" src="https://www.youtube.com/embed/H1m78Zi4vME" frameborder="0" allowfullscreen></iframe>
+					<div class="col-md-8">
+						<div class="widget">
+							<iframe class="widget__auto-height" width="100%" height="" src="https://www.youtube.com/embed/sXe-enxWQhk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+						</div>
 					</div>
-					<div class="col-4">
-						<div id="vk_groups"></div>
+					<div class="col-md-4">
+						<div class="widget">
+							<div class="widget__auto-height" id="vk_groups"></div>
+						</div>
 					</div>
 				</div>
 				<div class="owl-carousel owl-theme partners">
@@ -963,7 +970,7 @@
 			<footer class="page-footer">
 				<section class="container container-lg">
 					<div class="row align-items-end">
-						<div class="col-10">
+						<div class="col-md-6 col-lg-10">
 							<ul class="footer-navigation">
 								<li>
 									<a href="#">Туры</a>
@@ -989,7 +996,7 @@
 							</ul>
 							<a class="footer-phone" href="#"><i class="fa fa-phone" aria-hidden="true"></i> +7-917-438-88-93</a>
 						</div>
-						<div class="col-2">
+						<div class="col-md-6 col-lg-2">
 							<p class="footer-social">
 								<a href="#">
 									<i class="fa fa-instagram" aria-hidden="true"></i>
@@ -1020,7 +1027,9 @@
 	<script src="js/script.js"></script>
 	<script src="js/custom.js"></script>
 	<script type="text/javascript">
-		VK.Widgets.Group("vk_groups", {mode: 0,  width: "auto", height: "470"}, 20003922);
+		var widgetHeight = document.querySelector('.widget').clientHeight;
+
+		VK.Widgets.Group("vk_groups", {mode: 0,  width: "auto", height: widgetHeight}, 20003922);
 	</script>
 </body>
 </html>
