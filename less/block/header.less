@@ -12,9 +12,11 @@
 		border-bottom: 1px solid @white;
 
 		.logo img {
-		    max-width: 40%;
-		    height: auto;
-		    min-width: 100px;
+			@media(max-width: 767px) {
+			    max-width: 40%;
+			    height: auto;
+			    min-width: 100px;
+			}
 		}
 
 		.contact {
@@ -90,11 +92,15 @@
 	    	@media(min-width: 992px) {
 	    		display: block;
 	    	}
+
+	    	@media(max-width: 767px) {
+	    		flex-basis: 100%;
+	    	}
 	    }
 
 		.list-menu {
 			display: flex;
-			justify-content: space-between;
+			justify-content: flex-end;
 			align-items: center;
 			flex-wrap: wrap;
 			list-style-type: none;
@@ -111,6 +117,32 @@
 				&:last-child {
 					border-right: none;
 					padding-right: 0;
+				}
+
+				@media(max-width: 991px) {
+					&:first-child {
+						padding-left: 0;
+					}
+				}
+			}
+
+			@media(max-width: 991px) and (min-width: 768px) {
+				justify-content: space-between;
+			}
+
+			@media(max-width: 767px) {
+				flex-direction: column;
+
+				.list-menu_item {
+					border-right: none;
+					
+					&:last-child {
+						padding-right: 7px;
+					}
+
+					&:first-child {
+						padding-left: 7px;
+					}
 				}
 			}
 		}

@@ -30,6 +30,21 @@
                 color: @btn2;
             }
         }
+
+        @media(max-width: 991px) and (min-width: 768px) {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+
+        @media(max-width: 991px) and (min-width: 768px) {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+
+        @media(max-width: 767px) {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
     }
 
     &__icon {
@@ -69,6 +84,10 @@
                 display: none;
             }
     	}
+
+        @media(max-width: 991px) {
+            height: 140px;
+        }
     }
 
     &__reed {
@@ -129,5 +148,9 @@
         @media(max-width: 991px) {
             display: none;
         }
+    }
+
+    @media(max-width: 991px) {
+        margin-bottom: 0;
     }
 }

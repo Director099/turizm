@@ -63,13 +63,9 @@ $(document).ready(function() {
                 items: 1,
                 nav: true
             },
-            450: {
+            767: {
                 items: 3,
                 nav: true
-            },
-            1200: {
-                items: 3,
-                nav: true,
             },
             1399: {
                 items: 5,
@@ -100,7 +96,28 @@ $(document).ready(function() {
         dots:false,
         stagePadding: 55,
         margin: 120,
-        items: 4
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            450: {
+                items: 2,
+                nav: true
+            },
+            767: {
+                items: 3,
+                nav: true
+            },
+            1200: {
+                items: 4,
+                nav: true,
+            },
+            1399: {
+                items: 5,
+                nav: true,
+            }
+        }
     });
 
 });
